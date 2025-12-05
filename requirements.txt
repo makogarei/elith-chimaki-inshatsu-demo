@@ -3,6 +3,7 @@ streamlit==1.37.0
 pandas==2.2.2
 altair==5.5.0
 openai==1.44.0
+streamlit_markdown
 
 # PDF出力を行う場合に必要（任意）
 weasyprint==67.0
