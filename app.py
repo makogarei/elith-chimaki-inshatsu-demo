@@ -527,6 +527,8 @@ def main() -> None:
         conversion_upload = st.file_uploader("流入元レポート CSV", type=["csv"])
         clicks_upload = st.file_uploader("ボタンクリック CSV", type=["csv"])
         st.caption("未指定時は datas/ 配下のサンプルを利用します。")
+        if st.button("データを読み直す", type="secondary"):
+            st.rerun()
 
     api_key = get_api_key()
 
