@@ -520,7 +520,7 @@ def main() -> None:
             st.success("secrets.toml の openai_api_key を検出しました。")
         else:
             st.warning("secrets.toml に openai_api_key が設定されていません。設定すると改善案が生成できます。")
-        goal_text = st.text_area("LPのゴール/補足(推奨)", placeholder="例: B2B資料請求を増やしたい / 採用の応募率を改善したい")
+        goal_text = st.text_area("ログ解析目的", value="採用の応募率を改善したい")
         st.divider()
         st.subheader("データ差し替え")
         traffic_upload = st.file_uploader("トラフィックレポート CSV", type=["csv"])
