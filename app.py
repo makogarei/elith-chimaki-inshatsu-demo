@@ -815,7 +815,7 @@ def main() -> None:
 
             if st.session_state.report_md:
                 st.markdown("##### レポートプレビュー")
-                st.text(st.session_state.report_md)
+                st.markdown(st.session_state.report_md)
                 # if st.session_state.report_pdf:
                 #     st.download_button(
                 #         "PDFをダウンロード",
